@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intro{
+  font-family:cursive; 
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #4dd0e1,   
+    4px 4px 0 #1e1e2f; 
+}
+.navbar {
+display: flex;
+  justify-content:center;     
+  align-items: center;
+  gap: 15px;
+   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom:20px;
+  height: 50px;
+
+}
+
+.nav-btn {
+  text-decoration: none;        
+  flex: 1;                           
+  text-align: center;                 
+  margin: 0 10px;   
+  /* background-color: #3a3a5c; */
+  color: #ffffff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  padding: 6px 10px; 
+  font-size:larger;
+  width:5px;
+  font-family:cursive; 
+}
+
+.nav-btn:hover {
+  background-color: skyblue;
+
+}
+
+.photo{
+    width: 300px;
+  margin: 0 auto;
+
+}
+img{
+   width: 150px;           
+  height: 150px;          
+  border-radius: 50%;    
+  object-fit: cover;   
+  border: 3px solid #555;
+}
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family:cursive; 
+  text-align:center;
+}
+a{
+    text-decoration: none;
+}
+
+.txt{
+ font-family:cursive; 
+ font-size:20px;
+}
+#work-experience{
+  text-align: center;
+}
+#education {
+  text-align: center;
+  padding: 30px;
+}
+
+.edu-table {
+  margin: 0 auto; 
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+  font-family: cursive;
+}
+
+.edu-table th, .edu-table td {
+  border: 1px dotted #888;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.edu-table thead th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+.edu-table tr:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+  color: #333;
+} 
+h2{
+text-decoration: underline wavy #d7dedf;
+  text-underline-offset: 6px;
+}
+footer{
+  font-size: smaller;
+}
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+  position: relative;
+}
+
+/* Hover scale */
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Icon color on hover */
+.social-icons a.github:hover {
+  color: #6e5494; 
+}
+
+.social-icons a.linkedin:hover {
+  color: #0077b5; 
+}
+
+.social-icons a.facebook:hover {
+  color: #1877f2; 
+}
+
+.social-icons a.email:hover {
+  color: #ff6b6b; 
+}
+
+/* Tooltip styles */
+.social-icons a {
+  position: relative;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Tooltip style using <span> */
+.social-icons a .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+
+#contact {
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #4dd0e1;
+  background: #1e1e2f;
+  color: white;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background: #4dd0e1;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+.skills-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.skill-category {
+  margin-top: 30px;
+}
+
+.skill-category h3 {
+  font-size: 22px;
+  color: #00ffff; /* or any color you like */
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill {
+  font-size: 40px;
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.2);
+  color: #00ffff;
+}
+
+.skill::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.skill:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+.aq{
+  color:aqua;
+}
+.nav-btn.active {
+  background-color: #00ffff;   
+  color: #000000;              
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffff;
+}
+
