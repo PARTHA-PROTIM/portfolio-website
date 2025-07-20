@@ -12,7 +12,7 @@
     2px 2px 0 #4dd0e1,   
     4px 4px 0 #1e1e2f; 
 }
-.navbar {
+/* .navbar {
 display: flex;
   justify-content:center;     
   align-items: center;
@@ -30,7 +30,7 @@ display: flex;
   flex: 1;                           
   text-align: center;                 
   margin: 0 10px;   
-  /* background-color: #3a3a5c; */
+   background-color: #3a3a5c; 
   color: #ffffff;
   border-radius: 8px;
   transition: background-color 0.3s ease;
@@ -43,7 +43,72 @@ display: flex;
 .nav-btn:hover {
   background-color: skyblue;
 
+} */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 20px;
+  height: 50px;
+  flex-wrap: wrap; 
 }
+
+.nav-btn {
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  padding: 6px 10px;
+  font-size: larger;
+  font-family: cursive;
+  white-space: nowrap; 
+  min-width: 0;
+font-size: clamp(0.7rem, 2vw, 1rem);
+  max-width: 100%;
+}
+.nav-btn.active {
+  background-color: skyblue;
+  color: black;
+}
+
+.nav-btn:hover {
+  background-color: skyblue;
+}
+ @media (max-width: 768px) {
+  .nav-btn {
+    padding: 4px 8px;
+    font-size: medium;
+  }
+}
+
+ /* @media (max-width: 480px) {
+  .nav-btn {
+    padding: 3px 6px;
+    font-size:small;
+  }
+}  */
+@media screen and (max-width: 480px) {
+  .nav-btn {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-btn {
+    font-size: medium;
+    padding: 4px 6px;
+    margin: 4px;
+  }
+}
+
 
 .photo{
     width: 300px;
@@ -150,7 +215,6 @@ footer{
   color: #ff6b6b; 
 }
 
-/* Tooltip styles */
 .social-icons a {
   position: relative;
   text-decoration: none;
@@ -163,7 +227,6 @@ footer{
   transform: scale(1.2);
 }
 
-/* Tooltip style using <span> */
 .social-icons a .tooltip-text {
   visibility: hidden;
   opacity: 0;
@@ -238,7 +301,7 @@ footer{
 
 .skill-category h3 {
   font-size: 22px;
-  color: #00ffff; /* or any color you like */
+  color: #00ffff; 
   margin-bottom: 20px;
   text-decoration: underline;
 }
